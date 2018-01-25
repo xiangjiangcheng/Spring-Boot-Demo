@@ -19,5 +19,5 @@ ${AnsiColor.BRIGHT_YELLOW}
                    `=---='
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
          佛祖保佑       永无BUG
-         
+
 Spring Boot的版本:v${spring-boot.version}
