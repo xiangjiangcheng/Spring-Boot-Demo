@@ -1,12 +1,15 @@
 package com.xiang.demo;
 
 import com.xiang.demo.controller.HelloWorldController;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -21,7 +24,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 public class DemoApplicationTests {
 	protected final Logger logger = LoggerFactory.getLogger(this.getClass());
+
 	private MockMvc mockMvc;
+
+	@Autowired
+	private StringRedisTemplate stringRedisTemplate;
 
 	@Test
 	public void contextLoads() {
@@ -46,5 +53,12 @@ public class DemoApplicationTests {
 				.andExpect(content().string(equalTo("i am Spring Boot!")));
 	}
 
+	@Test
+	public void testRedis() {
+		logger.info("测试redis");
+		// 保存字符串
+		stringRedisTemplate.opsForValue().set("name", "大帅比");
+		Assert.assertEquals("大帅比", stringRedisTemplate.opsForValue().get("name"));
+	}
 
 }
