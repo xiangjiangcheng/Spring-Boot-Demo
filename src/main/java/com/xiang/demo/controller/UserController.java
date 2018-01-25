@@ -40,10 +40,12 @@ public class UserController {
     @ApiImplicitParam(name = "user", value = "用户详细实体user", required = true, dataType = "User")
     @RequestMapping(value="", method=RequestMethod.POST)
     public String postUser(@RequestBody User user) {
+
         // users.put(user.getUserId(), user);
         if (user != null) {
             userService.save(user);
         }
+        // throw new MyException("测试");
         return "success";
     }
 
