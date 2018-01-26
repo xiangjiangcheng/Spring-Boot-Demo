@@ -33,7 +33,7 @@ spring:
   mail: # JavaMailSender 发送邮件
     host: smtp.qq.com
     username: 1150241658
-    password: *****  #这里是授权密码
+    password: xwvtoujokoizgdhb  #这里是授权密码
     properties:
       mail:
         smtp:

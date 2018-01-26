@@ -23,4 +23,4 @@
 ## 更新记录
 ### v1.0.0
 
-QAQ:欢迎访问[我的博客](xiangjiangcheng.cn "吴彦祖小江的博客")
+QAQ:欢迎访问[我的博客](http://xiangjiangcheng.cn "吴彦祖小江的博客")
