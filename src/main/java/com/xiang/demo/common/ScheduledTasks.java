@@ -1,4 +1,4 @@
-package com.xiang.demo.controller;
+package com.xiang.demo.common;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,9 +17,9 @@ import java.util.Date;
  */
 
 @Component
-public class ScheduledTasksController {
+public class ScheduledTasks {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ScheduledTasksController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ScheduledTasks.class);
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
