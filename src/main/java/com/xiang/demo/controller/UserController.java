@@ -14,6 +14,8 @@ import java.util.*;
 /**
  * @author xjc
  *
+ * 测试restful接口
+ *
  * restful风格的Api
  */
 @Api(description = "用户API")

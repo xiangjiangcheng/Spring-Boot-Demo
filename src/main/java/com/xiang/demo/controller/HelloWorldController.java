@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * @author xjc
  *
+ * 测试访问前后端
+ *
  * 这里前后端没有分离，不要使用@RestController注解，只有写rest api接口的时候使用
  * @RestController = @Controller + @ResponseBody
  */
