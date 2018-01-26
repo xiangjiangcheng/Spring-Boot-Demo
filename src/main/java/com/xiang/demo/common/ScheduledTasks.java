@@ -32,7 +32,7 @@ public class ScheduledTasks {
     @Scheduled(fixedRate = 5000)
     public void reportCurrentTime() {
         // TODO: 2018/1/26 定时任务：比如定时推送消息-邮件、短信 
-        System.out.println("每隔5秒执行一次：" + dateFormat.format(new Date()));
+        // System.out.println("每隔5秒执行一次：" + dateFormat.format(new Date()));
         // log.info("The time is now {}", dateFormat.format(new Date()));
     }
 

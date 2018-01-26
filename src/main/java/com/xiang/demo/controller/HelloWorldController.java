@@ -26,6 +26,18 @@ public class HelloWorldController {
         return "index";
     }
 
+    @RequestMapping("/login")
+    public String login(Model model) {
+
+        return "/demo/login";
+    }
+
+    @RequestMapping("/hello")
+    public String hello (Model model) {
+
+        return "/demo/hello";
+    }
+
     @RequestMapping(value = "/helloWorld/to_hello", method = RequestMethod.GET)
     @ResponseBody
     public String toHello() {
