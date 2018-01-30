@@ -120,6 +120,21 @@
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 
+		<!-- 支付宝 -->
+		<dependency>
+			<groupId>net.guerlab</groupId>
+			<artifactId>sdk-alipay-starter</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+
+        <!-- fastJson -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.21</version>
+        </dependency>
+
 		<!-- 测试模块，包括JUnit、Hamcrest、Mockito -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
