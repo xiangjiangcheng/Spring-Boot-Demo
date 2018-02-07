@@ -65,7 +65,8 @@ public class DemoApplicationTests {
 
 	@Test
 	public void testRedis() {
-		logger.info("测试redis");
+		String test = "dfds";
+		logger.info("测试redis:{}", test);
 		// 保存字符串
 		stringRedisTemplate.opsForValue().set("name", "大帅比");
 		Assert.assertEquals("大帅比", stringRedisTemplate.opsForValue().get("name"));

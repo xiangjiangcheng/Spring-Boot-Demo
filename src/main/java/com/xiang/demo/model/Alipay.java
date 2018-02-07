@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Alipay {
     /**
-     * 类型
+     * 商户生成签名字符串所使用的签名算法类型，目前支持RSA2和RSA，推荐使用RSA2
      */
     @Value("${sdk.alipay.sign-type}")
     private String signType;
